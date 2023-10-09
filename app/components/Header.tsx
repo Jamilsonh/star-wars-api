@@ -27,7 +27,7 @@ function Header() {
     <>
       <Container>
         <LeftHeader>
-          <Image src={logo} width={230} alt={''} layout='responsive' />
+          <Image src={logo} width={230} alt={''} />
         </LeftHeader>
         <DividerContainer>
           <Divider

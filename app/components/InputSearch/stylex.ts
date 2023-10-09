@@ -22,6 +22,7 @@ export const Input = styled.input`
   box-shadow: 0 0 0 0;
   border: 0 none;
   outline: 0;
+  width: 200px;
 
   ::placeholder {
     /* Define a cor do texto do placeholder como transparente */
