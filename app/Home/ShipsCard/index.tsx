@@ -1,7 +1,8 @@
 import React from 'react';
 import { Container } from './styles';
+import Image from 'next/image';
 
-export default function ShipsCard({ ship }) {
+export default function ShipsCard({ ship, imageUrl }) {
   const {
     name,
     model,
@@ -21,6 +22,14 @@ export default function ShipsCard({ ship }) {
   return (
     <Container>
       <h2>{name}</h2>
+
+      <Image
+        className='image'
+        src={imageUrl}
+        width={250}
+        height={250}
+        alt={''}
+      />
       <p>
         <strong>Modelo:</strong> {model}
       </p>
@@ -30,7 +39,6 @@ export default function ShipsCard({ ship }) {
       <p>
         <strong>Custo em Créditos:</strong> {cost_in_credits}
       </p>
-      {/* Adicione mais informações conforme necessário */}
     </Container>
   );
 }
